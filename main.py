@@ -31,9 +31,9 @@ text_width = text[2]
 draw.text(((width - text_width) / 2, 10), top_text, font=font, fill='black')
 
 text = draw.textbbox((0, 0), bottom_text, font)
-text_width = [2]
-text_height = [3]
+text_width = text[2]
+text_height = text[3]
 
 draw.text(((width - text_width) / 2, height - text_height - 10), bottom_text, font=font, fill='black')
 
-image.save(new_meme.jpg)
+image.save("new_meme.jpg")
